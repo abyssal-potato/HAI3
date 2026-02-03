@@ -54,8 +54,8 @@
   },
   "peerDependencies": {
     "@hai3/react": "*",
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.20",
