@@ -336,7 +336,7 @@ export async function generateProject(
     'react-day-picker': '9.12.0',
     'react-dom': '19.2.4',
     'react-hook-form': '7.68.0',
-    'react-redux': '9.1.2',
+    'react-redux': '9.2.0',
     'tailwindcss-animate': '1.0.7',
     zod: '4.0.0',
   };
