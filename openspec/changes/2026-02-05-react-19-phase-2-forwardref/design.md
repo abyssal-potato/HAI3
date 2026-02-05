@@ -419,6 +419,38 @@ type InputGroupAddonProps = {
 - Expanded type definition to support both use cases
 - Demo code uses vertical positioning for textarea addons (code editor layout)
 
+### ElementRef Deprecation (React 19)
+
+**Issue:** After codemod transformation, all Radix UI wrapper components used `React.ElementRef` which is deprecated in React 19.
+
+**Files affected:** 16 base components (accordion, alert-dialog, avatar, collapsible, dialog, drawer, dropdown-menu, hover-card, navigation-menu, popover, progress, select, sheet, slider, switch, tooltip)
+
+**Problem:**
+```typescript
+// Deprecated in React 19
+ref?: React.Ref<React.ElementRef<typeof DropdownMenuPrimitive.SubTrigger>>
+```
+
+**Root cause:**
+- `React.ElementRef` is deprecated in React 19
+- React 19 deprecates accessing `element.ref` - ref is now a regular prop
+- Official replacement is `React.ComponentRef`
+
+**Fix applied:**
+```typescript
+// React 19 compatible
+ref?: React.Ref<React.ComponentRef<typeof DropdownMenuPrimitive.SubTrigger>>
+```
+
+**Implementation:**
+- Batch replacement using sed: `s/React\.ElementRef/React.ComponentRef/g`
+- 67 occurrences replaced across 16 files
+- Type checking passes (zero errors)
+
+**References:**
+- [shadcn-ui ElementRef deprecation discussion](https://github.com/shadcn-ui/ui/discussions/6195)
+- [shadcn-ui React 19 ElementRef issue](https://github.com/shadcn-ui/ui/issues/7920)
+
 ## Success Criteria
 
 - [x] All 100 forwardRef declarations migrated

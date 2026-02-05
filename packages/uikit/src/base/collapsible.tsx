@@ -6,7 +6,7 @@ const Collapsible = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.Root> & {
-    ref?: React.Ref<React.ElementRef<typeof CollapsiblePrimitive.Root>>;
+    ref?: React.Ref<React.ComponentRef<typeof CollapsiblePrimitive.Root>>;
   }
 ) => (<CollapsiblePrimitive.Root
   ref={ref}
@@ -20,7 +20,7 @@ const CollapsibleTrigger = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.CollapsibleTrigger> & {
-    ref?: React.Ref<React.ElementRef<typeof CollapsiblePrimitive.CollapsibleTrigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof CollapsiblePrimitive.CollapsibleTrigger>>;
   }
 ) => (<CollapsiblePrimitive.CollapsibleTrigger
   ref={ref}
@@ -34,7 +34,7 @@ const CollapsibleContent = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.CollapsibleContent> & {
-    ref?: React.Ref<React.ElementRef<typeof CollapsiblePrimitive.CollapsibleContent>>;
+    ref?: React.Ref<React.ComponentRef<typeof CollapsiblePrimitive.CollapsibleContent>>;
   }
 ) => (<CollapsiblePrimitive.CollapsibleContent
   ref={ref}

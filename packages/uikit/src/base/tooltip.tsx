@@ -30,7 +30,7 @@ const TooltipTrigger = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof TooltipPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof TooltipPrimitive.Trigger>>;
   }
 ) => (<TooltipPrimitive.Trigger ref={ref} {...props} />)
 TooltipTrigger.displayName = TooltipPrimitive.Trigger.displayName
@@ -42,7 +42,7 @@ const TooltipContent = (
     sideOffset = 4,
     ...props
   }: React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof TooltipPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof TooltipPrimitive.Content>>;
   }
 ) => (<TooltipPrimitive.Portal>
   <TooltipPrimitive.Content

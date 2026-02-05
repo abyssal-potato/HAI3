@@ -12,7 +12,7 @@ const HoverCardTrigger = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof HoverCardPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof HoverCardPrimitive.Trigger>>;
   }
 ) => (<HoverCardPrimitive.Trigger
   ref={ref}
@@ -29,7 +29,7 @@ const HoverCardContent = (
     sideOffset = 4,
     ...props
   }: React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof HoverCardPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof HoverCardPrimitive.Content>>;
   }
 ) => (<HoverCardPrimitive.Portal data-slot="hover-card-portal">
   <HoverCardPrimitive.Content

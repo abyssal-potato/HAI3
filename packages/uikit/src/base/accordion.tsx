@@ -9,7 +9,7 @@ const Accordion = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root> & {
-    ref?: React.Ref<React.ElementRef<typeof AccordionPrimitive.Root>>;
+    ref?: React.Ref<React.ComponentRef<typeof AccordionPrimitive.Root>>;
   }
 ) => (<AccordionPrimitive.Root
   ref={ref}
@@ -24,7 +24,7 @@ const AccordionItem = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> & {
-    ref?: React.Ref<React.ElementRef<typeof AccordionPrimitive.Item>>;
+    ref?: React.Ref<React.ComponentRef<typeof AccordionPrimitive.Item>>;
   }
 ) => (<AccordionPrimitive.Item
   ref={ref}
@@ -41,7 +41,7 @@ const AccordionTrigger = (
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof AccordionPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof AccordionPrimitive.Trigger>>;
   }
 ) => (<AccordionPrimitive.Header className="flex">
   <AccordionPrimitive.Trigger
@@ -66,7 +66,7 @@ const AccordionContent = (
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof AccordionPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof AccordionPrimitive.Content>>;
   }
 ) => (<AccordionPrimitive.Content
   ref={ref}
