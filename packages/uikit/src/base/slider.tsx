@@ -11,7 +11,7 @@ const Slider = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> & {
-    ref?: React.Ref<React.ElementRef<typeof SliderPrimitive.Root>>;
+    ref?: React.Ref<React.ComponentRef<typeof SliderPrimitive.Root>>;
   }
 ) => (<SliderPrimitive.Root
   ref={ref}
@@ -29,7 +29,7 @@ const SliderTrack = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof SliderPrimitive.Track> & {
-    ref?: React.Ref<React.ElementRef<typeof SliderPrimitive.Track>>;
+    ref?: React.Ref<React.ComponentRef<typeof SliderPrimitive.Track>>;
   }
 ) => (<SliderPrimitive.Track
   ref={ref}
@@ -47,7 +47,7 @@ const SliderRange = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof SliderPrimitive.Range> & {
-    ref?: React.Ref<React.ElementRef<typeof SliderPrimitive.Range>>;
+    ref?: React.Ref<React.ComponentRef<typeof SliderPrimitive.Range>>;
   }
 ) => (<SliderPrimitive.Range
   ref={ref}
@@ -62,7 +62,7 @@ const SliderThumb = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof SliderPrimitive.Thumb> & {
-    ref?: React.Ref<React.ElementRef<typeof SliderPrimitive.Thumb>>;
+    ref?: React.Ref<React.ComponentRef<typeof SliderPrimitive.Thumb>>;
   }
 ) => (<SliderPrimitive.Thumb
   ref={ref}

@@ -12,7 +12,7 @@ const NavigationMenu = (
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.Root>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.Root>>;
   }
 ) => (<NavigationMenuPrimitive.Root
   ref={ref}
@@ -33,7 +33,7 @@ const NavigationMenuList = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.List>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.List>>;
   }
 ) => (<NavigationMenuPrimitive.List
   ref={ref}
@@ -58,7 +58,7 @@ const NavigationMenuTrigger = (
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.Trigger>>;
   }
 ) => (<NavigationMenuPrimitive.Trigger
   ref={ref}
@@ -79,7 +79,7 @@ const NavigationMenuContent = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.Content>>;
   }
 ) => (<NavigationMenuPrimitive.Content
   ref={ref}
@@ -99,7 +99,7 @@ const NavigationMenuViewport = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.Viewport>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.Viewport>>;
   }
 ) => (<div className={cn("absolute left-0 top-full flex justify-center")}>
   <NavigationMenuPrimitive.Viewport
@@ -120,7 +120,7 @@ const NavigationMenuIndicator = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator> & {
-    ref?: React.Ref<React.ElementRef<typeof NavigationMenuPrimitive.Indicator>>;
+    ref?: React.Ref<React.ComponentRef<typeof NavigationMenuPrimitive.Indicator>>;
   }
 ) => (<NavigationMenuPrimitive.Indicator
   ref={ref}

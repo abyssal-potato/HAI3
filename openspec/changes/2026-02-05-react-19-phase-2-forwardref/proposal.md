@@ -22,6 +22,7 @@ React 19 introduces native ref support as a standard prop, making the `forwardRe
   - `packages/uikit/src/base/textarea.tsx` - uses `useImperativeHandle`, requires custom migration
   - Type annotations for components with implicit any types
   - `packages/uikit/src/base/input-group.tsx` - expand InputGroupAddon type to support block-start/block-end
+  - Replace deprecated `React.ElementRef` with `React.ComponentRef` (67 occurrences in 16 Radix UI wrappers)
   - Review and test all migrated components for correctness
 
 - **Code pattern transformation:**

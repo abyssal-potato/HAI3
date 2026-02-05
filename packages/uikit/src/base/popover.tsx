@@ -12,7 +12,7 @@ const PopoverTrigger = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof PopoverPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof PopoverPrimitive.Trigger>>;
   }
 ) => (<PopoverPrimitive.Trigger
   ref={ref}
@@ -29,7 +29,7 @@ const PopoverContent = (
     sideOffset = 4,
     ...props
   }: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof PopoverPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof PopoverPrimitive.Content>>;
   }
 ) => (<PopoverPrimitive.Portal>
   <PopoverPrimitive.Content
@@ -51,7 +51,7 @@ const PopoverAnchor = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Anchor> & {
-    ref?: React.Ref<React.ElementRef<typeof PopoverPrimitive.Anchor>>;
+    ref?: React.Ref<React.ComponentRef<typeof PopoverPrimitive.Anchor>>;
   }
 ) => (<PopoverPrimitive.Anchor
   ref={ref}

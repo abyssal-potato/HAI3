@@ -17,7 +17,7 @@ const DrawerTrigger = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Trigger> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Trigger>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Trigger>>;
   }
 ) => (<DrawerPrimitive.Trigger ref={ref} data-slot="drawer-trigger" {...props} />)
 DrawerTrigger.displayName = DrawerPrimitive.Trigger.displayName
@@ -34,7 +34,7 @@ const DrawerClose = (
     ref,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Close> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Close>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Close>>;
   }
 ) => (<DrawerPrimitive.Close ref={ref} data-slot="drawer-close" {...props} />)
 DrawerClose.displayName = DrawerPrimitive.Close.displayName
@@ -45,7 +45,7 @@ const DrawerOverlay = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Overlay>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Overlay>>;
   }
 ) => (<DrawerPrimitive.Overlay
   ref={ref}
@@ -65,7 +65,7 @@ const DrawerContent = (
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Content>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Content>>;
   }
 ) => (<DrawerPortal data-slot="drawer-portal">
   <DrawerOverlay />
@@ -118,7 +118,7 @@ const DrawerTitle = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Title>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Title>>;
   }
 ) => (<DrawerPrimitive.Title
   ref={ref}
@@ -134,7 +134,7 @@ const DrawerDescription = (
     className,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Description> & {
-    ref?: React.Ref<React.ElementRef<typeof DrawerPrimitive.Description>>;
+    ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Description>>;
   }
 ) => (<DrawerPrimitive.Description
   ref={ref}
